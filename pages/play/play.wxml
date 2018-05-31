@@ -1,0 +1,27 @@
+<view class='top'>
+<image src="{{userpic}}"></image>
+<view>
+{{nickname}}
+<view>{{timeText}}</view>
+</view>
+<view>
+得分
+<view>
+{{showscore}}
+</view>
+</view>
+</view>
+
+<view class='btn'>
+<button bindtap='startplay' class='startbtn' disabled="{{isable}}">开始</button>
+<button  wx:if="{{check}}" class='startbtn' bindtap='preok'>提交</button>
+</view>
+
+<view class='musicitem'>
+<view bindtap="player" data-url='{{item.src}}' data-id='{{item.id}}' wx:for="{{listitem}}" style="width:300rpx;height:300rpx;background:url({{item.picsrc}}) no-repeat;">
+{{item.name}}
+</view>
+</view>
+<view class='linkcss'>
+<navigator url='../final/final?score={{showscore}}'>结束本次游戏</navigator>
+</view>

@@ -1,0 +1,11 @@
+<view style='text-align:center;'>
+<image src='{{userpic}}'></image>
+<view style='text-align:center;'>
+{{nickname}}
+</view>
+<view style='text-align:center;'>
+等级：
+{{score}}
+{{userlevel}}
+</view>
+</view>
